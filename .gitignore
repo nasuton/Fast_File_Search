@@ -1,0 +1,16 @@
+/target
+/dist/
+
+# Local IDE settings
+/.idea/
+/.vscode/
+*.iml
+
+# Local secrets and OS files
+.env
+.env.*
+!.env.example
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.pdb
