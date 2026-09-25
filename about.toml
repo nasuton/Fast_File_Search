@@ -1,0 +1,9 @@
+# License alternatives are selected in this order; font licenses are included.
+accepted = [
+    "MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC",
+    "Zlib", "BSL-1.0", "CC0-1.0", "Unicode-3.0", "Unicode-DFS-2016",
+    "OFL-1.1", "Ubuntu-font-1.0",
+]
+targets = ["x86_64-pc-windows-msvc"]
+ignore-dev-dependencies = true
+ignore-build-dependencies = false

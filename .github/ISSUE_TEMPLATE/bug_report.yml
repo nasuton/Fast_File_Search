@@ -1,0 +1,34 @@
+name: 不具合報告
+description: 再現手順と実際の動作をお知らせください。
+body:
+  - type: input
+    id: version
+    attributes:
+      label: アプリのバージョン
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windowsのバージョン・対象ストレージ
+      placeholder: Windows 11 / ローカルSSD、外付けHDD、ネットワークドライブなど
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 機能、検索条件、処理方式、スレッド数を記載してください。個人情報を含むパスやファイルは伏せてください。
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 期待する動作と実際の動作
+    validations:
+      required: true
+  - type: textarea
+    id: errors
+    attributes:
+      label: エラー表示・補足

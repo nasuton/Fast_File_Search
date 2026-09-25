@@ -1,0 +1,32 @@
+[package]
+name = "Fast_File_Search"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+description = "Windows desktop file search, size analysis, and SHA-256 comparison with selectable parallel processing"
+license = "MIT"
+readme = "README.md"
+keywords = ["file-search", "gui", "sha256", "rayon", "windows"]
+categories = ["filesystem", "gui"]
+publish = false
+
+[lib]
+name = "fast_file_search"
+
+[[bin]]
+name = "Fast_File_Search"
+path = "src/main.rs"
+
+[dependencies]
+csv = "1.4"
+eframe = { version = "0.33", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }
+rayon = "1.11"
+rfd = "0.15"
+sha2 = "0.10"
+
+[dev-dependencies]
+tempfile = "3.23"
+
+[profile.release]
+strip = true
+lto = "thin"

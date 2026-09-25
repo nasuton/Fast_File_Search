@@ -1,0 +1,15 @@
+name: 機能提案
+description: 解決したい課題と希望する動作をお知らせください。
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 解決したい課題
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 希望する動作・利用例
+    validations:
+      required: true

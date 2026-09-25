@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fast File Search — Third-party licenses</title>
+  <style>body{max-width:960px;margin:40px auto;padding:0 24px;font:16px/1.6 system-ui,sans-serif;color:#172033}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f5f8;padding:20px}h2{margin-top:48px}a{color:#086b65}</style>
+</head>
+<body>
+  <h1>Third-party licenses</h1>
+  <p>License notices for Fast File Search's Windows dependencies, including bundled fonts. Generated from Cargo.lock with cargo-about. Windows system fonts are loaded at runtime and are not redistributed.</p>
+  {{#each licenses}}
+  <section>
+    <h2>{{name}}</h2>
+    <ul>{{#each used_by}}<li><a href="https://crates.io/crates/{{crate.name}}/{{crate.version}}">{{crate.name}} {{crate.version}}</a></li>{{/each}}</ul>
+    <pre>{{text}}</pre>
+  </section>
+  {{/each}}
+</body>
+</html>
